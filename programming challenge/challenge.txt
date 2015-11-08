@@ -1,0 +1,26 @@
+Do as many of these as possible. You can use any programming language. Use the name of the program given below as the file name. 
+
+You are given a text file and a noise file - test.txt and noise.txt
+
+1. countlines:
+Read test.txt and count the lines and print the line count
+2. countwords:
+Read test.txt  and count the number of words in the file and print the word count
+3. countclean:
+Read words from test.txt and 'noise words' from noise.txt. Print words from test.txt if it is not a noise word.
+4.wordfreq:
+From test.txt create and print a word frequency table. A word frequency table consists of a word and the number of times it occurs in the document
+5. cleanwordfreq:
+Repeat 4 but eliminate noise words (from noise.txt) from the word frequency table 
+6. wordtags:
+Convert the word frequency table into an html document
+7. wordfreqcloud1:
+convert the word frequency table to an html word cloud. The higher frequency words have bigger fonts proportional to the word count
+8. wordfreqcloud2:
+Make the word cloud in such a way that when you hover over each word the frequency is displayed as a tool tip
+9. wordfreqcloud3:
+Make the word cloud linked. When the user clicks on a word, show all the lines in the test.txt file that contains the word
+
+
+
+ 

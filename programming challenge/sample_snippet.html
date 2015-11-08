@@ -1,0 +1,70 @@
+<!-- This is just an example of an HTML page using JavaScript. It is a refrence for those who have never programmed in JavaScript before -->
+
+<!-- This is just a comment in HTML -->
+<!-- Run this program before reading through it. It will be easier to understand it that way -->
+
+<html>
+  <body>
+      <!-- Here we create a header for the page by specifying a large font -->
+      <div style="font-size:30px;">Programming Languages</div>
+      
+      <!-- Here we define the area of the screen that has the list of programming languages.
+        All the programming languages will be listed in this division-->
+      <div style="position:absolute;width:50%;margin-left:0%">
+          <ul style="cursor:pointer;">
+              <!-- for each intem of the list, a JavaScript function display_content() is called when clicked -->
+              <li onclick="display_content('Python')">Python</li>
+              <li onclick="display_content('Clojure')">Clojure</li>
+              <li onclick="display_content('Scala')">Scala</li>
+              <li onclick="display_content('Ruby')">Ruby</li>
+              <li onclick="display_content('AngularJS')">AngularJS</li>
+          </ul>
+      </div>
+      
+      <!-- Here we create the content part of the screen on the right -->
+      <div style="position:absolute;width:50%;margin-left:50%;">
+          <!-- The title of the content will have a larger font -->
+          <div id="title_area" style="font-size:20px;"> </div>
+          
+          <br/>
+          
+          <!-- this is where the decription goes -->
+          <div id="content_area"> </div>
+      </div>
+    </body>
+    
+    
+    <!-- all JavaScript is written in the <script> tag -->
+    <script>
+        // this is how you define a function
+        function display_content(programming_language){
+            // select the title area div
+            var title_area = document.getElementById('title_area');
+            // change the content inside the title area
+            title_area.innerHTML = programming_language;
+            
+            // select the content area
+            var content_area = document.getElementById('content_area');
+            
+            // if Python is clicked, add the description of Python in the content area
+            if (programming_language == 'Python'){
+                // change the text inside the content area
+                content_area.innerHTML="Python is a widely used general-purpose, high-level programming language.Its design philosophy emphasizes code readability, and its syntax allows programmers to express concepts in fewer lines of code "
+            }
+            if (programming_language == 'Clojure'){
+                content_area.innerHTML= "Clojure (pronounced like 'closure') is a dialect of the Lisp programming language created by Rich Hickey. Clojure is a general-purpose programming language with an emphasis on functional programming"
+            }
+            if (programming_language == 'Scala'){
+                content_area.innerHTML= "Scala is a programming language for general software applications. Scala has full support for functional programming and a very strong static type system"
+            }
+            if (programming_language == 'Ruby'){
+                content_area.innerHTML = "Ruby is a dynamic, reflective, object-oriented, general-purpose programming language. It was designed and developed in the mid-1990s by Yukihiro 'Matz' Matsumoto in Japan"
+            }
+            if (programming_language == 'AngularJS'){
+                content_area.innerHTML = "AngularJS (commonly referred to as 'Angular' or 'Angular.js') is an open-source web application framework mainly maintained by Google and by a community of individual developers and corporations to address many of the challenges encountered in developing single-page applications"
+            }
+        }
+    </script>
+    
+    
+</html> 
